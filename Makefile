@@ -12,6 +12,9 @@ examples:
 		mocha $$example; \
 	done
 
+publish:
+	npm publish -f  # Please note the -f option to force the publication (even if the version is not modified)
+
 all: test examples hint
 
 .PHONY: test examples
