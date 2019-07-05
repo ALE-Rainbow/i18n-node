@@ -1182,4 +1182,4 @@ module.exports = (function() {
 
   return i18n;
 
-}());
+});
