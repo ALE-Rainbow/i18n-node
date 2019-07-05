@@ -23,6 +23,12 @@ var vsprintf = require('sprintf-js').vsprintf,
   ),
   parseInterval = require('math-interval-parser').default;
 
+  // Configure Mustache to not escape strings in templated labels
+  Mustache.escape = function (value)
+  {
+      return value;
+  };
+
 // exports an instance
 module.exports = (function() {
 
